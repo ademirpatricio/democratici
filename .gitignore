@@ -1,4 +1,6 @@
 .DS_Store
 *.backup.html
-uploads/
 Claude outputs/
+
+node_modules/
+dist/
