@@ -1,6 +1,6 @@
 # Site DIB — entrega para Cloudflare Workers
 
-Esta pasta contém o rascunho do site da lista cívica Democratici in Brasile para as eleições COMITES 2026 na circunscrição de São Paulo. É um site estático: `public/index.html`, `public/styles.css` e `public/assets/`. Não há processo de compilação nem API própria.
+Esta pasta contém o rascunho do site da lista cívica Democratici in Brasile para as eleições COMITES 2026 na circunscrição de São Paulo. É um site estático de três páginas (`/`, `/chapa/` e `/propostas/`), com `public/styles.css`, `public/site.js` e `public/assets/`. Não há processo de compilação nem API própria. Cabeçalho, faixa de fase e rodapé são repetidos nas três páginas: ao mudar um deles, altere os três arquivos HTML.
 
 ## Prévia e publicação
 
@@ -24,8 +24,11 @@ O arquivo `wrangler.jsonc` não define domínio nem rota. Se já houver um Worke
 wrangler.jsonc
 README.md
 public/
-  index.html
+  index.html          (home: passos, o que são os COMITES, acesso à chapa e propostas)
+  chapa/index.html    (os 22 candidatos)
+  propostas/index.html
   styles.css
+  site.js             (faixa de fase, minibios e animações de entrada)
   assets/
     (logo, ícone e fotos dos candidatos)
 ```
