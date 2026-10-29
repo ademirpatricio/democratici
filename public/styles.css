@@ -1131,3 +1131,91 @@ footer {
     padding: 26px 22px;
   }
 }
+
+/* -------------------------------------------------- */
+/* Etapa 1 concluída                                   */
+/* -------------------------------------------------- */
+.hero-steps .hero-step-done {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  column-gap: 14px;
+  padding: 24px 4px;
+  border-bottom: 1px solid #7b9bb1;
+  color: #c7d7e1;
+  cursor: default;
+}
+.hero-steps .hero-step-done span,
+.hero-steps .hero-step-done strong {
+  opacity: 0.62;
+}
+.hero-steps .hero-step-done small {
+  grid-column: 2;
+  margin-top: 6px;
+  color: #92d6b1;
+  font-weight: 700;
+}
+.hero-steps .hero-step-done small::before {
+  content: "✓ ";
+}
+.step-badge {
+  display: inline-block;
+  margin-left: 12px;
+  padding: 4px 12px;
+  vertical-align: middle;
+  border-radius: 999px;
+  background: #e5f4eb;
+  color: #006b2f;
+  font-size: 0.74rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.step-done .step-mark span {
+  opacity: 0.55;
+}
+.step-archive {
+  margin-top: 28px;
+  border-top: 1px solid #dbe2e6;
+  padding-top: 16px;
+}
+.step-archive summary {
+  cursor: pointer;
+  color: var(--blue);
+  font-weight: 700;
+  list-style: none;
+}
+.step-archive summary::-webkit-details-marker {
+  display: none;
+}
+.step-archive summary::after {
+  content: "+";
+  float: right;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+.step-archive[open] summary::after {
+  content: "−";
+}
+.step-archive summary:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 3px;
+}
+.step-archive[open] .when-closed {
+  display: none;
+}
+.step-archive[open] .when-open {
+  display: inline;
+}
+.step-archive-body {
+  padding-top: 8px;
+}
+.step-archive-body > p {
+  max-width: 780px;
+  font-size: 1.07rem;
+}
+@media (max-width: 650px) {
+  .step-badge {
+    display: table;
+    margin: 10px 0 0;
+  }
+}

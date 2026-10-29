@@ -76,7 +76,7 @@
           <div class="hero-actions"><a class="button button-light" href="#passos">Veja os três passos <span aria-hidden="true">↓</span></a><a class="button button-hero-outline" href="#votar">Veja como votar <span aria-hidden="true">↓</span></a></div>
         </div>
         <div class="hero-steps" aria-label="Etapas da participação">
-          <a href="#apoiar"><span>01</span><strong>Apoie nossa Lista</strong></a>
+          <div class="hero-step-done" aria-disabled="true"><span>01</span><strong>Apoie nossa Lista</strong><small>Etapa concluída</small></div>
           <a href="#inscrever"><span>02</span><strong>Inscreva-se como Eleitor</strong></a>
           <a href="#votar"><span>03</span><strong>Vote</strong></a>
         </div>
@@ -88,10 +88,15 @@
         <h2>O que fazer, onde ir e quando agir</h2>
         <p>A Central da Campanha pode orientar você em todas as etapas. A inscrição e o voto são feitos perante o Consulado.</p>
       </div>
-      <article class="step" id="apoiar">
+      <article class="step step-done" id="apoiar">
         <div class="step-mark"><span>01</span></div>
         <div class="step-body">
-          <h3>Apoie nossa Lista</h3>
+          <h3>Apoie nossa Lista <span class="step-badge">Etapa concluída</span></h3>
+          <p>O prazo para apoiar a lista terminou em 3/10/2026. Obrigado a quem apoiou a nossa candidatura. Agora, siga para a próxima etapa.</p>
+          <p><a class="button button-primary" href="#inscrever">Ir para a etapa 02: inscrição <span aria-hidden="true">↓</span></a></p>
+          <details class="step-archive">
+            <summary><span class="when-closed">Ver as orientações desta etapa</span><span class="when-open">Fechar orientações</span></summary>
+            <div class="step-archive-body">
           <p>Para apoiar nossa candidatura, a assinatura precisa ser autenticada presencialmente no Consulado-Geral da Itália em São Paulo ou nos pontos da missão itinerante.</p>
           <p>É preciso levar ao menos um dos seguintes documentos:</p>
           <ol class="document-list" type="a">
@@ -117,6 +122,8 @@
             </div>
             <p class="fine">Locais e horários publicados pelo Consulado-Geral da Itália em São Paulo em 11/09/2026.</p>
           </div>
+            </div>
+          </details>
         </div>
       </article>
 
