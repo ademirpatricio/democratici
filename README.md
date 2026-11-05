@@ -1,6 +1,6 @@
 # Site DIB — entrega para Cloudflare Workers
 
-Esta pasta contém o rascunho do site da lista cívica Democratici in Brasile para as eleições COMITES 2026 na circunscrição de São Paulo. É um site estático de três páginas (`/`, `/chapa/` e `/propostas/`), com `public/styles.css`, `public/site.js` e `public/assets/`. Não há processo de compilação nem API própria. Cabeçalho, faixa de fase e rodapé são repetidos nas três páginas: ao mudar um deles, altere os três arquivos HTML.
+Esta pasta contém o rascunho do site da lista cívica Democratici in Brasile para as eleições COMITES 2026 na circunscrição de São Paulo. É um site estático com três páginas em português (`/`, `/chapa/` e `/propostas/`) e as mesmas três em italiano, dentro de `/it/` (`/it/`, `/it/lista/` e `/it/proposte/`), com `public/styles.css`, `public/site.js` e `public/assets/`. Não há processo de compilação nem API própria. Cabeçalho, faixa de fase e rodapé são repetidos nas seis páginas: ao mudar um deles, altere os seis arquivos HTML. O seletor PT | IT no cabeçalho leva à mesma página no outro idioma. Os textos do banner de fase (português e italiano) ficam em `public/site.js`.
 
 ## Prévia e publicação
 
@@ -27,6 +27,9 @@ public/
   index.html          (home: passos, o que são os COMITES, acesso à chapa e propostas)
   chapa/index.html    (os 22 candidatos)
   propostas/index.html
+  it/index.html         (home em italiano)
+  it/lista/index.html   (chapa em italiano)
+  it/proposte/index.html
   styles.css
   site.js             (faixa de fase, minibios e animações de entrada)
   assets/
